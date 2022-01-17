@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry">
+    <sys_ux_page_registry action="DELETE">
+        <active>true</active>
+        <admin_panel>2d8cdd29194501102762261b8f41cecd</admin_panel>
+        <admin_panel_table>sys_ux_app_config</admin_panel_table>
+        <auth_routes/>
+        <page/>
+        <path>collection-tracker-workspace</path>
+        <root_macroponent display_value="Agent Workspace App Shell">c276387cc331101080d6d3658940ddd2</root_macroponent>
+        <sys_class_name>sys_ux_page_registry</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-14 11:20:59</sys_created_on>
+        <sys_id>258cdd29d9450110b45b2cc93b96c9d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Collection Tracker Workspace</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_page_registry_258cdd29d9450110b45b2cc93b96c9d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-14 11:20:59</sys_updated_on>
+        <title>Collection Tracker Workspace</title>
+    </sys_ux_page_registry>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>85724faadb2e4850387021c405961983</instance_id>
+        <instance_name>dev97953</instance_name>
+        <name>sys_ux_page_registry_258cdd29d9450110b45b2cc93b96c9d0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry"><sys_ux_page_registry action="INSERT_OR_UPDATE"><active>true</active><admin_panel>2d8cdd29194501102762261b8f41cecd</admin_panel><admin_panel_table>sys_ux_app_config</admin_panel_table><auth_routes/><page/><path>collection-tracker-workspace</path><root_macroponent display_value="Agent Workspace App Shell">c276387cc331101080d6d3658940ddd2</root_macroponent><sys_class_name>sys_ux_page_registry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-14 11:20:59</sys_created_on><sys_id>258cdd29d9450110b45b2cc93b96c9d0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Collection Tracker Workspace</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_ux_page_registry_258cdd29d9450110b45b2cc93b96c9d0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-14 11:20:59</sys_updated_on><title>Collection Tracker Workspace</title></sys_ux_page_registry></record_update>]]></payload>
+        <payload_hash>-114167477</payload_hash>
+        <record_name>Collection Tracker Workspace</record_name>
+        <reverted_from/>
+        <source>0508182107010110c7ecf7d08c1ed004</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2022-01-14 06:21:40</sys_created_on>
+        <sys_id>4b0d196907450110c7ecf7d08c1ed075</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>17e573fb5200000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UX Application</type>
+        <update_guid>0b0d1969d54501100178342294deef75</update_guid>
+        <update_guid_history>0b0d1969d54501100178342294deef75:-114167477</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-14 11:23:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_registry">sys_ux_page_registry</sys_db_object>
+        <sys_id>4d079b828641482cafa786dcde1ee7e4</sys_id>
+        <sys_metadata>258cdd29d9450110b45b2cc93b96c9d0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Collection Tracker Workspace</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ux_page_registry_258cdd29d9450110b45b2cc93b96c9d0</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_registry_258cdd29d9450110b45b2cc93b96c9d0">4b0d196907450110c7ecf7d08c1ed075</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-14 11:23:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
