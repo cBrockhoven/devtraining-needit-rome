@@ -11,16 +11,26 @@
 CountRecords.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
 	getCount: function() {
-		var table = this.getParameter('sysparm_tableName');
-		var record = new GlideRecord(table);
-		var params = this.getParameter('sysparm_queryparams');
+		var COUNT = "'COUNT', 'sys_mod_count'";
+		var table = this.getParameter('sysparm_tablename');
+		var agg = new GlideAggregate(table);
+		var length = this.getParameter('sysparm_length');
+		/*for(var i = 0; i <= length; i++){
+			var field = this.getParameter('sysparm_field' + i);
+			var value = this.getParameter('sysparm_value' + i);
+			agg.addQuery(field, value);
+		}*/
+		agg.addQuery('priority','=',3);
+		agg.setGroup(false);
 		
-		params.forEach(function (obj) {record.addQuery(obj.field, obj.value);});
+		agg.addAggregate('COUNT', 'sys_mod_count');
+		agg.query();
 		
-		record.query();
+		if(agg.next()){
+			return agg.getAggregate('COUNT', 'sys_mod_count');
+		}
 		
-		return record.getRowCount();
-
+		return 5 + '';
 	},
 	
     type: 'CountRecords'
@@ -29,13 +39,13 @@ CountRecords.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-01-19 08:15:37</sys_created_on>
         <sys_id>96af16cf07010110c7ecf7d08c1ed033</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>CountRecords</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_script_include_96af16cf07010110c7ecf7d08c1ed033</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-01-19 08:31:47</sys_updated_on>
+        <sys_updated_on>2022-01-19 10:06:32</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="DELETE">
+        <action_name>select_priority_3</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+	getCount();
+}]]></client_script_v2>
+        <comments>Priorität 3 auf der List NeedIt.</comments>
+        <condition>gs.hasRole('admin')</condition>
+        <form_action>false</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint>Das ist der Hint</hint>
+        <isolate_script>false</isolate_script>
+        <list_action>true</list_action>
+        <list_banner_button>true</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages>Das ist ein Test für eine UI Action</messages>
+        <name>Priority 3</name>
+        <onclick>onClick()</onclick>
+        <order>100</order>
+        <script><![CDATA[function onClick() {
+	var tablename = 'x_58872_needit_needit';
+	var queryParams = [{'field':'priority', 'value':'3'}];
+alert(queryParams[0].field);
+	var ajax = new GlideAjax('CountRecords');
+	ajax.addParam('sysparm_name','getCount');
+	ajax.addParam('sysparm_tablename',tablename);
+	ajax.addParam('sysparm_queryparams', queryParams);
+	ajax.getXML(cb);
+
+	function cb(response){
+		var answer = response.responseXML.documentElement.getAttribute('answer');
+		alert('Das ist die Antwort: ' + answer);
+	}
+	
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-19 07:17:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cca19ec307010110c7ecf7d08c1ed098</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>Priority 3</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ui_action_cca19ec307010110c7ecf7d08c1ed098</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-19 08:58:04</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>85724faadb2e4850387021c405961983</instance_id>
+        <instance_name>dev97953</instance_name>
+        <name>sys_ui_action_cca19ec307010110c7ecf7d08c1ed098</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;select_priority_3&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+	getCount();
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments&gt;Priorität 3 auf der List NeedIt.&lt;/comments&gt;&lt;condition&gt;gs.hasRole('admin')&lt;/condition&gt;&lt;form_action&gt;false&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;hint&gt;Das ist der Hint&lt;/hint&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;true&lt;/list_action&gt;&lt;list_banner_button&gt;true&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages&gt;Das ist ein Test für eine UI Action&lt;/messages&gt;&lt;name&gt;Priority 3&lt;/name&gt;&lt;onclick&gt;onClick()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function onClick() {
+	var tablename = 'x_58872_needit_needit';
+	var queryParams = [{'field':'priority', 'value':'3'}];
+alert(queryParams[0].field);
+	var ajax = new GlideAjax('CountRecords');
+	ajax.addParam('sysparm_name','getCount');
+	ajax.addParam('sysparm_tablename',tablename);
+	ajax.addParam('sysparm_queryparams', queryParams);
+	ajax.getXML(cb);
+
+	function cb(response){
+		var answer = response.responseXML.documentElement.getAttribute('answer');
+		alert('Das ist die Antwort: ' + answer);
+	}
+	
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-01-19 07:17:49&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;cca19ec307010110c7ecf7d08c1ed098&lt;/sys_id&gt;&lt;sys_mod_count&gt;26&lt;/sys_mod_count&gt;&lt;sys_name&gt;Priority 3&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_cca19ec307010110c7ecf7d08c1ed098&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-01-19 08:58:04&lt;/sys_updated_on&gt;&lt;table&gt;x_58872_needit_needit&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2117689229</payload_hash>
+        <record_name>Priority 3</record_name>
+        <reverted_from/>
+        <source>1ac73f7a07700110c7ecf7d08c1ed09c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-19 08:58:04</sys_created_on>
+        <sys_id>b0cba24b07410110c7ecf7d08c1ed0ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e718eb24a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-19 08:58:04</sys_updated_on>
+        <type>UI Action</type>
+        <update_guid>b8cba24bee4101101815ca2c1bf2abab</update_guid>
+        <update_guid_history>b8cba24bee4101101815ca2c1bf2abab:-2117689229,a30a2ac774410110afdaa7cd98d84e31:1507529967,e4f926c7a7410110f5f24aae3b2a6a56:-816711729,17d9e2c7ef410110e54a1c96fbd5ebc9:1998660015,6cc96647944101108ef0a1314ca5f2a0:261309585,bb49a287d6410110943e70e502b78401:1507529967,1478ee47664101102b7105ae248311e9:-1152804529,41162ec34f410110ee1bbfe67f3b5729:-969210428,db95e2c3734101102f752a7b7b852dd3:1900541124,dbf4a2c3064101109abed8534aab4863:-969210428,24f4a2836d410110590572306abe7e6e:-1150578710,96542283d94101105025b5e2748669dc:1987879405,7523ea435341011092f7b40ab780dcfc:-1150578710,2f8f92cf660101108df15a1d1a0a370c:-1257031396,ef7fde8f5201011001cc94623ebc218e:-1889279319,326f9e8f85010110aaab8a532a83e4a5:707893672,014fda8ff40101101dcf6cb7f00e10c8:-1167257195,793f9a8f36010110ad40f927f3ac2cb8:1081113146,b32c920fd201011056c09e2fe482d38a:272623599,cc48de0b9a0101109bd8669fb04b3eec:1871984002,87185e0b0b01011056df673be0c3e9c0:-1992400698,8ef75e0beb0101107cc2e8e9f5e45a72:-188709728,54d7da0be601011029a2cfef7a4c8123:1420683399,c657960bf2010110264b16a83664530c:-188709728,6d251a8779010110d93b29338ec3bb7a:1250805626,0ff4d687b30101109447d24df8a4a7ec:-463871719,d8d4da07fe0101103378a01330404a70:103534848</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-19 08:59:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action">sys_ui_action</sys_db_object>
+        <sys_id>01f16fcebde841ab9ca06ba23c4cd931</sys_id>
+        <sys_metadata>cca19ec307010110c7ecf7d08c1ed098</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Priority 3</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="NeedIt">76cea01507050110c7ecf7d08c1ed027</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ui_action_cca19ec307010110c7ecf7d08c1ed098</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_cca19ec307010110c7ecf7d08c1ed098">b0cba24b07410110c7ecf7d08c1ed0ac</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-19 08:59:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
